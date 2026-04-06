@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Uniform Cost Search Visualizer</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Uniform Cost Search Visualizer</h1>
+
+<div class="panel">
+
+<label>Number of Cities</label>
+<input type="number" id="numNodes" min="2" max="10">
+
+<button onclick="createInputs()">Create Inputs</button>
+
+<div id="inputs"></div>
+
+<button onclick="runUCS()">Run Uniform Cost Search</button>
+
+</div>
+
+<h2>Graph</h2>
+
+<div id="network"></div>
+
+<h2>Results</h2>
+<div id="output"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
